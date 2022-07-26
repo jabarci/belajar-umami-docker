@@ -1,0 +1,526 @@
+_type: export
+__export_format: 4
+__export_date: 2022-07-26T00:54:39.652Z
+__export_source: insomnia.desktop.app:v2022.4.2
+resources:
+  - _id: req_24fb5079ffde4ed099d605404815e685
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658596986484
+    created: 1658596227799
+    url: https://ipwho.is/36.74.41.112
+    name: Who IP
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1658596227799
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_341980ba8e6347d88acb111ae184e081
+    parentId: null
+    modified: 1658542702270
+    created: 1658542702270
+    name: Umami
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_309292a2d99a4867b24a95529fe061f3
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674198330
+    created: 1658674188453
+    url: "{{base_url}}/datamaps.world.json"
+    name: Data Maps World
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1658569477866.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_603da04923ac45eca0ed2dd11270b932
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658796827536
+    created: 1658542727934
+    url: "{{base_url}}/api/auth/login"
+    name: Authentication
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "{{ _.username }}",
+        	"password": "{{ _.password }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_c4a69d86f24b48f3959fcf9612aac5f0
+    authentication: {}
+    metaSortKey: -1658542727934
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e1d595405aa844c1bd0a2977f6bfaca9
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658673259547
+    created: 1658542858257
+    url: "{{base_url}}/api/websites"
+    name: Websites
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1658246126404
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_204a4b101d654276b5e7636005d32777
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658673759852
+    created: 1658673705776
+    url: "{{base_url}}/api/website/1"
+    name: Single Website
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1658171976021.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e837dfff9fcb40d9894537426f3de95a
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658673671920
+    created: 1658543062915
+    url: "{{base_url}}/api/website/1/stats"
+    name: Getting stats
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1658588400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1658674799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1658097825639
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_829bd7f4187949bc887659115404314c
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658673914369
+    created: 1658673551953
+    url: "{{base_url}}/api/website/1/pageviews"
+    name: Page views
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1658588400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1658674799999"
+        description: ""
+      - id: pair_03de557bba0342a8abfaf21198747f5d
+        name: unit
+        value: hour
+        description: ""
+      - id: pair_2b1a133b5a234b5ba4b0998b66710962
+        name: tz
+        value: Asia/Jakarta
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1658023675256.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6c735e52de9d4c7987f544c0256a7de7
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674016643
+    created: 1658673936134
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics URL
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: url
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657986600065.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3375f37ba77e498c9b2ad24ef7936469
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674039976
+    created: 1658674037780
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Referrer
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: referrer
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657968062469.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4f53c8364f30450ab0b7d4ad8bad98ba
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674057606
+    created: 1658674054732
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Browser
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: browser
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657958793671.8125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ffa9a5261bf4482cb6d876aa5622713b
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674073746
+    created: 1658674071117
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Os
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: os
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657954159272.9062
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_00292f5972d8411c80a1d2738195e18f
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674113110
+    created: 1658674090684
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Device
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: device
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657951842073.4531
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1d7d36612abd41688bb92acd0e46b75c
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674121519
+    created: 1658674119263
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Country
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: country
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657950683473.7266
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_87c0b9b13866419fa2b8ad5c87a04cb7
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658674167154
+    created: 1658674136548
+    url: "{{base_url}}/api/website/1/metrics"
+    name: Metrics Event
+    description: ""
+    method: GET
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params: []
+    parameters:
+      - id: pair_69d62bd256ad4a7c84acc9606e99eb7c
+        name: type
+        value: event
+        description: ""
+      - id: pair_86047531f1b8421096455adce9fc3dff
+        name: start_at
+        value: "1656608400000"
+        description: ""
+      - id: pair_51417d228c9e4f6791e4e03fc03462fd
+        name: end_at
+        value: "1659286799999"
+        description: ""
+    headers:
+      - name: Content-Type
+        value: application/x-www-form-urlencoded
+        id: pair_2c9e9f02fee94d10a4fa0384c6e5266a
+    authentication:
+      type: bearer
+      token: eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiUEJFUzItSFMyNTYrQTEyOEtXIiwicDJjIjoyODI4LCJwMnMiOiIwQ3VHNnJLUDZCNV9TLXM5cUwyWEhRIn0.kZqbYlSnwnCy90j1mXgF-DH9a5hIqg_65OxnyvVOjJVfatKN4-L3dw.N2M6EqFuApKlr01PdRnUIQ.VMfj1YOugWtjiFr4SYUr2kMq5qZPF6Aahvbv9ZPbeaTWJoOL4tTU9g1j5CffS1a7ZCrvmY5QifVPJsSaoVSLVgpgH_J7fHnra-IM-L_pFnYsMGQtHkuJWUWOmGFWN7aXD2f7qjjzOPZcocRbvJ3HdBOvr7K5oZCj1IOAo_ChuPttALG4ztSKYr1oI3BRjAGKphdJmax0-R8IzgxKPbDLag.PMeNbdZAX1cYDgcOe_Jcbg
+    metaSortKey: -1657950104173.8633
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_f222c624f689c5f1723337a9ccfa0f94af1d6779
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658796760179
+    created: 1658542702286
+    name: Base Environment
+    data:
+      base_url: localhost:3000
+      username: dika
+      password: asdf1234
+    dataPropertyOrder:
+      "&":
+        - base_url
+        - username
+        - password
+    color: null
+    isPrivate: false
+    metaSortKey: 1658542702286
+    _type: environment
+  - _id: jar_f222c624f689c5f1723337a9ccfa0f94af1d6779
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658542702292
+    created: 1658542702292
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_a10845fe79b04c3f85c888d5bd33a6c1
+    parentId: wrk_341980ba8e6347d88acb111ae184e081
+    modified: 1658542702272
+    created: 1658542702272
+    fileName: Umami
+    contents: ""
+    contentType: yaml
+    _type: api_spec
